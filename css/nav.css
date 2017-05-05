@@ -1,0 +1,37 @@
+       *{ margin:0;padding:0; }     
+       body{background:url("images/bg_title.jpg") repeat-x,url("images/bg.jpg");}     
+       #Logo{     
+           width:974px;height:45px;     
+           /*margin:上下 左右*/     
+           margin:auto;
+		   border-width:1px;
+		   border-color:#979797;     
+           border-radius:10px;     
+           /*html + css3 渐变画图 */     
+               background-image:-webkit-linear-gradient(#F7B8B9 1% ,#F17173 49% ,#F17173 49%);     
+           box-shadow:1px 1px 33px #fff;/*设计阴影的*/
+		   float:left;      
+       }     
+       #Logo ul li     
+       {width:138px; height:45px;list-style:none;/*去掉圆点*/float:left;/*水平显示*/color:white;/* #fff */font-size:18px; font-family:"微软雅黑";text-align:center; line-height:45px;/* 行高跟 高度一致时，竖直居中*/border-right:1px solid #FD585B;/*右边框*/}     
+       #Logo ul li a     
+       {     
+           color:white;/* #fff */     
+           font-size:18px;     
+           font-family:"微软雅黑";     
+           text-decoration:none;     
+       }     
+       #Logo ul li:hover     
+       { 
+	      		     
+           background:rgba(10,5,5,0.45); 
+		   background: #FF5F62;    
+       }     
+       #Logo ul li.first:hover     
+       {     
+           border-radius:10px 0px 0px 10px;/*左上 左下 圆弧显示 */     
+       }     
+       #Logo ul li.last:hover     
+       {     
+           border-radius:0px 10px 10px 0px;/*右上 右下 圆弧显示 */     
+       }    

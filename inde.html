@@ -1,0 +1,601 @@
+<!doctype html>
+<head>
+<meta charset="utf-8"> 
+<title>www.bobo.com</title>
+<link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" href="css/index.css" />
+    <script src="js/run.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/center-right.js"></script>
+</head>
+<body onload="menuSlider.init('menu','slide')">
+	<div id="container">
+    <embed; height="0px" width="0px"></embed>
+    <img src="img/客服.gif" class="shakeimage" onMouseover="shake(this,'onmouseout')" > 
+	<script language="JavaScript1.2"> 
+    var typ=["marginTop","marginLeft"],rangeN=10,timeout=20; 
+    function shake(o,end){ 
+    var range=Math.floor(Math.random()*rangeN); 
+    var typN=Math.floor(Math.random()*typ.length); 
+    o["style"][typ[typN]]=""+range+"px"; 
+    var shakeTimer=setTimeout(function(){shake(o,end)},timeout); 
+    o[end]=function(){clearTimeout(shakeTimer)}; 
+    } 
+    </script>  
+	<div id="logo">
+		<div id="logo-img"></div>
+		<div class="sou-center">
+			<div class="search">
+				<input type="text" class="sou" value="输入你想要的蛋糕类型" onclick="if(this.value=='' || this.value=='输入你想要的蛋糕类型')this.value='';">
+				<div class="button">搜&nbsp;索</div>
+			</div>
+			<div class="zhu">
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="zhuce.html">注册</a></li>
+				</ul>
+			</div>
+			<ul style="list-style: none;">
+					<li>关键词：</li>
+					<li><a href="#">生日蛋糕</a></li>
+					<li><a href="#">巧克力蛋糕</a></li>
+					<li><a href="#">慕斯蛋糕</a></li>
+					<li><a href="#">水果蛋糕</a></li>
+					<li class="rexian">服务热线:400-600-6984</li>
+			</ul>
+
+		</div>
+		<div class="sou-right"><img src="img/sou-right.jpg"/></div>
+	</div>
+	</div>
+	</div>
+	<div id="nav">
+	<div class="menu">
+    <ul id="menu" >
+        <li value="1" id="nav-1" id="frist"><a href="index.html">首页</a></li>
+        <li><a href="#" id="nav-2">水果蛋糕</a></li>
+        <li><a href="#" id="nav-3">巧克力蛋糕</a></li>
+        <li><a href="#" id="nav-2">慕斯蛋糕</a></li>
+        <li><a href="#" id="nav-3">冰淇淋蛋糕</a></li>
+        <li><a href="#" id="nav-2">创意蛋糕</a></li>
+        <li><a href="#" id="nav-2">卡通蛋糕</a></li>
+        <li><a href="#" id="nav-2">生日蛋糕</a></li>
+        <li><a href="#" id="nav-2">预定蛋糕</a></li>
+    </ul>
+    <div id="slide"></div>
+    </div>
+    </div>
+    <div id="container">
+    <div class="slide-bg">
+	<div class="slide-wp">
+        <div id="slides" class="slides">
+            <div>
+                <div class="slideChild" style="display:none;">
+                    <span class="timeTip">7月18日 11:00准时开启</span>
+     <!--               预订查询&gt;&gt;-->
+                </div>
+                <a class="a-video opa js-aVideo" href="#" title="七彩果园"><img class="slideImg" src="images/3.jpg" galleryimg="no"></a>
+            </div>
+            <div>
+                <div class="slideChild" style="display:none;">
+                  
+                </div>
+        	    <a class="a-video opa js-aVideo" href="#" title="巧克力之恋"><img class="slideImg" src="images/2.jpg" galleryimg="no"></a>
+            </div>
+            <div>
+                <div class="slideChild" style="display:none;">
+                   
+                </div>
+        	    <a class="a-video opa js-aVideo" href="#" title="夏天味道"><img class="slideImg" src="images/1.jpg" galleryimg="no"> </a>
+            </div>
+            <div>
+                <div class="slideChild" style="display:none;">
+                   
+                </div>
+        	     <a class="a-video opa js-aVideo" href="#"  title="心花怒放"><img class="slideImg" src="images/4.jpg" galleryimg="no"></a>
+            </div>
+            <div>
+                <div class="slideChild" style="display:none;">
+                   
+                </div>
+        	     <a class="a-video opa js-aVideo" href="#"  title="放飞童心"><img class="slideImg" src="images/5.jpg" galleryimg="no"></a>
+            </div>
+            <div>
+                <div class="slideChild" style="display:none;">
+                   
+                </div>
+        	     <a class="a-video opa js-aVideo" href="#"  title="欢乐颂"><img class="slideImg" src="images/6.jpg" galleryimg="no"></a>
+            </div>
+        </div><!--end slides-->
+    </div><!--end slide-wp-->
+</div><!--end slide-bg-->
+<div class="uptop"><a href="#"></a></div><!--end top-->
+<script type="text/javascript" src="banner/181.js" ></script>
+<script type="text/javascript" src="banner/jquery.slides.min.js" ></script>
+<script>
+$(function() {
+	$('#slides').slidesjs({
+		play:{
+			active: false,
+			effect: "fade",
+			auto: true,
+			interval: 4000
+		},
+		effect: {
+			fade: {
+			speed: 1500,
+			crossfade: true
+			}
+		},
+		pagination: {
+			active: true
+		},
+		navigation:{
+			active: false
+		}
+	});
+});
+
+</script>
+    <!--<div id="input">
+    <div class="top">
+    <div id="input1">
+    	<form>
+        	快速查找：<select name=""><option>按蛋糕种类进行</option><option>祝福</option><option>探望</option><option>大寿</option><option>爱情</option> <option>家居</option> <option>商务</option></select>
+           <select name=""><option>按价格要求</option><option>80~150</option><option>150~250</option><option>250~350</option><option>350~500</option> <option>500以上</option></select>
+        </form>
+    </div>
+    </div>
+    <div id="img1"><a href="#"><img src="img/搜索1.jpg"></a></div>
+    <div class="top">
+    <div id="deng" align="center"><ul style="list-style:none"><li><a href="zhuce.html" target="_blank"><strong>注册</strong></a></li></ul></div>
+    </div>
+    <div id="su2"><img src="img/素材.gif"></div>
+    <div class="top">
+    <div id="deng"  align="center"><ul style="list-style:none"><li><a href="#"><strong>登录</strong></a></li></ul></div>
+    </div>
+    <div id="input2">
+    <input type="text" id="sou" value="输入你想买的蛋糕名称"><div id=img><a href="#"><img src="img/搜索.jpg"></a></div>
+    </div>
+    </div>-->
+    <!--<div id="nav1">
+   		<marquee behavior="scroll"><strong>爱的味道，唯你独享;蛋糕御品，金香四溢;皇家品质，地道美味。 本店欢迎大家来选购！</strong></marquee>
+    </div>-->
+    <div id="BOX">
+
+        <div id="center-left">
+        	<div id="ShellBox1">
+            	<div class="top">
+                <div id="Shellbox1" align="center">
+                <div id="she1">
+					<a href="yunduan.html" target="_blank"><img src="img/云端漫步.jpg"</a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥158</font></a><font id="she2-r">NO.1</font></div>
+                    <div id="she3"><font id="she3-l"><a href="yunduan.html">云端漫步</a></font><font id="she3-r"><a href="yunduan.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox2" align="center">
+                <div id="she1">
+                	<a href="huazhihai.html" target="_blank"><img src="img/花之语.jpg"</a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥139.00</font></a><font id="she2-r">NO.2</font></div>
+                    <div id="she3"><font id="she3-l"><a href="huazhihai.html">花之海</a></font><font id="she3-r"><a href="huazhihai.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox3" align="center">
+                <div id="she1">
+                    	<a href="qingmi.html" target="_blank"><img src="img/情迷花海.jpg"></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥137.00</font></a><font id="she2-r">NO.3</font></div>
+                    <div id="she3"><font id="she3-l"><a href="qingmi.html">情迷花海</a></font><font id="she3-r"><a href="qingmi.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox4" align="center">
+                	 <div id="she1">
+                     	<a href="shoushan.html" target="_blank"><img src="img/寿山福海.jpg"></a>
+                     </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥238.00</font></a><font id="she2-r">NO.4</font></div>
+                    <div id="she3"><font id="she3-l"><a href="shoushan.html">寿山福海</a></font><font id="she3-r"><a href="shoushan.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+        	</div>
+            <div id="ShellBox2">
+            	<div class="top">
+                <div id="Shellbox1" align="center">
+                <div id="she1">
+					<a href="xinhai.html" target="_blank"><img src="img/心海1.jpg"></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥169.00</font></a><font id="she2-r">NO.5</font></div>
+                    <div id="she3"><font id="she3-l"><a href="xinhai.html">心海</a></font><font id="she3-r"><a href="xinhai.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox2" align="center">
+                <div id="she1">
+                	<a href="xinshuyu.html" target="_blank"><img src="img/心属于你1.jpg"></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥210.00</font></a><font id="she2-r">NO.6</font></div>
+                    <div id="she3"><font id="she3-l"><a href="xinshuyu.html">心属于你</a></font><font id="she3-r"><a href="xinshuyu.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox3" align="center">
+                <div id="she1">
+                    	<a href="menghuan.html" target="_blank"><img src="img/梦幻七夕.jpg"></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥154.00</font></a><font id="she2-r">NO.7</font></div>
+                    <div id="she3"><font id="she3-l"><a href="menghuan.html">梦幻七夕</a></font><font id="she3-r"><a href="menghuan.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox4" align="center">
+                	 <div id="she1">
+                     	<a href="chonger.html" target="_blank"><img src="img/宠儿.jpg"></a>
+                     </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥339.00</font></a><font id="she2-r">NO.8</font></div>
+                    <div id="she3"><font id="she3-l"><a href="chonger.html">宠儿</a></font><font id="she3-r"><a href="chonger.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div id="ShellBox3">
+            <div class="top">
+                <div id="Shellbox1" align="center">
+                <div id="she1">
+					<a href="lvyin.html" target="_blank"><img src="img/01.jpg"</a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥122.00</font></a><font id="she2-r">NO.9</font></div>
+                    <div id="she3"><font id="she3-l"><a href="lvyin.html">绿茵恋歌</a></font><font id="she3-r"><a href="lvyin.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox2" align="center">
+                <div id="she1">
+                	<a href="xingyu.html" target="_blank"><img src="img/02.jpg"/></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥236.00</font></a><font id="she2-r">NO.10</font></div>
+                    <div id="she3"><font id="she3-l"><a href="xingyu.html">星语心愿</a></font><font id="she3-r"><a href="xingyu.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox3" align="center">
+                <div id="she1">
+                    	<a href="xinhuafang.html" target="_blank"><img src="img/03.jpg"></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥159.00</font></a><font id="she2-r">NO.11</font></div>
+                    <div id="she3"><font id="she3-l"><a href="xinhuafang.html">心花放</a></font><font id="she3-r"><a href="xinhuafang.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox4" align="center">
+                	 <div id="she1">
+                     	<a href="Kitty.html" target="_blank"><img src="img/04.jpg"></a>
+                     </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥312.00</font></a><font id="she2-r">NO.12</font></div>
+                    <div id="she3"><font id="she3-l"><a href="Kitty.html">Kitty猫</a></font><font id="she3-r"><a href="Kitty.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div id="ShellBox4">
+            	            	<div class="top">
+                <div id="Shellbox1" align="center">
+                <div id="she1">
+					<a href="piaoxiang.html" target="_blank"><img src="img/飘香小筑.jpg"</a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥148.00</font></a><font id="she2-r">NO.13</font></div>
+                    <div id="she3"><font id="she3-l"><a href="piaoxiang.html">飘香小筑</a></font><font id="she3-r"><a href="piaoxiang.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox2" align="center">
+                <div id="she1">
+                	<a href="fenshe.html" target="_blank"><img src="img/粉色物语.jpg"</a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥256.00</font></a><font id="she2-r">NO.14</font></div>
+                    <div id="she3"><font id="she3-l"><a href="fenshe.html">粉色物语</a></font><font id="she3-r"><a href="fenshe.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox3" align="center">
+                <div id="she1">
+                    	<a href="jingdian.html" target="_blank"><img src="img/经典浪漫.jpg"></a>
+                </div>
+                <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥139.00</font></a><font id="she2-r">NO.15</font></div>
+                    <div id="she3"><font id="she3-l"><a href="jingdian.html">经典浪漫</a></font><font id="she3-r"><a href="jingdian.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+                <div class="top">
+                <div id="Shellbox4" align="center">
+                	 <div id="she1">
+                     	<a href="tiandian.html" target="_blank"><img src="img/甜点密语.jpg"></a>
+                     </div>
+                    <div class="she-xq">
+                    <div id="she2"><a><font id="she2-l">￥198.00</font></a><font id="she2-r">NO.16</font></div>
+                    <div id="she3"><font id="she3-l"><a href="tiandian.html">甜点密语</a></font><font id="she3-r"><a href="tiandian.html">查看</a></font></div>
+                </div>
+                </div>
+                </div>
+            </div>
+           <!-- <div id="Shellbox17"></div>-->
+        </div>
+        <div id="center-right">
+            <!--<div id="shellbox1"></div>
+            <div class="top">
+            <div id="shellbox2">
+            	<div id="A" align="center">
+                	<strong><a href="#">鲜奶蛋糕</a></strong>
+                </div>
+                <div id="B" align="center">
+                	<strong><a href="#">水果蛋糕</a></strong>
+                </div>
+                <div id="B" align="center">
+                	<strong><a href="#">巧克力蛋糕</a></strong>
+                </div>
+                <div id="B" align="center">
+                	<strong><a href="#">慕斯蛋糕</a></strong>
+                </div>
+                <div id="B" align="center">
+                	<strong><a href="#">冰淇淋蛋糕</a></strong>
+                </div>
+                <div id="B" align="center">
+                	<strong><a href="#">创意蛋糕</a></strong>
+                </div>
+            </div>
+            </div>
+            <div id="shellbox3"></div>
+            <div id="shellbox4"></div>
+            <div id="shellbox5"><a href="#"><img src="img/shellbox5.jpg"</a></div>-->
+<table class="ooih"  border="0" cellspacing="0" cellpadding="0" width="204" height="30" style="background-color: background-color: #E4E5EE;"> 
+ <tr> 
+<td class="ooihs" nowrap onmouseover="ghbq(this)">新闻</td> 
+<td class="ooihs" nowrap onmouseover="ghbq(this)">动态</td> 
+<td class="ooihs" nowrap onmouseover="ghbq(this)">我们</td> 
+<td > </td> 
+  </tr> 
+</table> 
+<table class="ooib" id="obody" border="0" cellspacing="0" cellpadding="0" width="204" height="250">  
+  <tr> 
+    <td> 
+    	<ul>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简0</a></li>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简介</a></li>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简介</a></li>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>新闻</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+
+    	</ul>
+    </td> 
+  </tr> 
+  <tr style="display: none"> 
+    <td> 
+		<ul>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简1</a></li>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简介</a></li>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简介</a></li>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>动态</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    	</ul>  
+    </td> 
+  </tr> 
+  <tr style="display: none"> 
+    <td> 
+		<ul style="list-style: none;">
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简2</a></li>
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简介</a></li>
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简介</a></li>
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    		<li><span>我们</span>&nbsp;<a href="#">七彩蛋糕网简介</a> </li>
+    	</ul>
+    </td> 
+  </tr> 
+
+</table> 
+<div class="center-hot">
+	<div class="center-right-top"><ul><li>热门排行</li></ul></div>
+	<div class="center-right-bottom">
+		<div class="center-pm">
+			<div class="pm-left">	
+				<div class="send">1
+				<div class="arrow"></div>
+				</div>
+			</div>
+			<div class="pm-right">
+				<div class="pm-right-name"><a href="#">彩虹堂</a></div>
+				<div class="pm-right-namexl">销量：1555</div>
+				<div class="pm-right-price">￥189</div>
+				<div class="pm-right-chaKan"><a href="#">查看</a></div>
+			</div>
+		</div>
+		<div class="center-pm">
+			<div class="pm-left1">	
+				<div class="send">2
+				<div class="arrow"></div>
+				</div>
+			</div>
+			<div class="pm-right">
+				<div class="pm-right-name"><a href="#">细细的爱</a></div>
+				<div class="pm-right-namexl">销量：1399</div>
+				<div class="pm-right-price">￥215</div>
+				<div class="pm-right-chaKan"><a href="#">查看</a></div>
+			</div>
+		</div>
+		<div class="center-pm1">
+			<div class="pm-left2">	
+				<div class="send">3
+				<div class="arrow"></div>
+				</div>
+			</div>
+			<div class="pm-right">
+				<div class="pm-right-name"><a href="#">漫天心</a></div>
+				<div class="pm-right-namexl">销量：1259</div>
+				<div class="pm-right-price">￥255</div>
+				<div class="pm-right-chaKan"><a href="#">查看</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="center-tuijian">
+			<div class="center-right-top">
+				<ul><li>蛋糕推荐</li></ul>
+			</div>
+			<div class="center-right-bottom">
+				<img src="img/xinhua.jpg" />
+			</div>
+			
+		</div>
+ </div>
+</div>
+    <div id="BOX1">
+    	<div class="top">
+    	<div id="box1">
+        	<ul style="list-style:none" >
+            	<li><strong><a href="#" >购物指南</a></strong></li>
+                <li><a href="#">购物隐私</a></li>
+                <li><a href="#">网站订购流程</a></li>
+                <li><a href="#">安心网购</a></li>
+        	</ul>
+        </div>
+        </div>
+        <div class="top">
+        <div id="box2">
+        	<ul style="list-style:none" >
+            	<li><strong><a href="#" >付款方式</a></strong></li>
+                <li><a href="#">支付宝担保交易</a></li>
+                <li><a href="#">银行转账</a></li>
+                <li><a href="#">上门收款</a></li>
+        	</ul>
+        </div>
+        </div>
+        <div class="top">
+        <div id="box3">
+        	<ul style="list-style:none" >
+            	<li><strong><a href="#" >配送方式</a></strong></li>
+                <li><a href="#">配送说明</a></li>
+                <li><a href="#">配送范围</a></li>
+                <li><a href="#">配送费用</a></li>
+        	</ul>
+        </div>
+        </div>
+        <div class="top">
+        <div id="box4">
+        	<ul style="list-style:none" >
+            	<li><strong><a href="#" >售后服务</a></strong></li>
+                <li><a href="#">消费权益</a></li>
+                <li><a href="#">订单查询</a></li>
+                <li><a href="#">常见问题</a></li>
+        	</ul>
+        </div>
+        </div>
+        <div class="top">
+        <div id="box5">
+        	<ul style="list-style:none" >
+            	<li><strong><a href="#" >关于我们</a></strong></li>
+                <li><a href="#">选蛋糕店加盟</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">加盟我们</a></li>
+        	</ul>
+        </div>
+        </div>
+    </div>
+    <!--<div class="top">
+    <div id="foot">
+    	<div  class="top">
+    	<div id="foot1" >
+        <ul style="list-style:none" =>
+        	<li align="center"><font size="+1"><strong>友情链接</strong></font></li>
+        </ul> 
+        </div>
+        </div>
+        	<div id="foot5">
+            <ul style="list-style:none">
+            	<li><strong>新闻</strong></li>
+            	<li><a href="http://news.sina.com.hk/"  target="_blank">新浪新闻</a></li>
+            	<li><a href="http://news.sina.com.hk/"  target="_blank">人民网</a></li>      
+            	<li><a href="http://news.baidu.com/" target="_blank">百度新闻</a></li>        
+            	<li><a href="http://news.sohu.com/"  target="_blank">搜狐新闻</a></li>       
+            	<li><a href="http://news.ifeng.com/"  target="_blank">凤凰新闻</a></li>
+            	<li><a href="http://toutiao.com/news_finance/"  target="_blank">今日头条</a></li>
+            </ul>
+            </div>
+        	<div id="foot6">
+            <ul style="list-style:none">
+            	<li><strong>视频</strong></li>
+                <li><a href="http://www.tudou.com/"  target="_blank">土豆</a></li>         
+            	<li><a href="http://www.v.baidu.com/"  target="_blank">百度视频</a></li>         
+            	<li><a href="http://www.iqiyi.com/"  target="_blank">爱奇艺</a></li>
+            	<li><a href="http://www.youku.com/"  target="_blank">优酷</a></li>
+            	<li><a href="http://v.qq.com/"  target="_blank">腾讯视频</a></li>
+				<li><a href="http://www.letv.com/"  target="_blank">乐视</a></li>
+            </ul>
+            </div>
+        	<div id="foot5">
+             <ul style="list-style:none">
+            	<li><strong>购物</strong></li>
+            	<li><a href="https://www.taobao.com/"  target="_blank">淘宝</a></li>
+            	<li><a href="https://www.tmall.com/"  target="_blank">天猫</a></li>
+            	<li><a href="https://www.jd.com/"  target="_blank">京东商城</a></li>
+            	<li><a href="http://bj.jumei.com/"  target="_blank">聚美优品</a></li>
+            	<li><a href="http://www.yhd.com/?type=3"  target="_blank">1号店</a></li>
+            	<li><a href="http://www.vip.com/"  target="_blank">唯品会</a></li>
+            </ul>
+            </div>
+        </div>-->
+    <div class="top">
+    <div id="BOX2" align="center">
+    <ul style="list-style:none">
+    	 <li><font size="-1">Copyright 2009 - 2013 dangaodian.org All Rights Reserved 版权所有：蛋糕店联盟</font></li>
+        <li><font size="-1">如果您对网站有任何疑问或建议，请拨打服务热线</font></li>
+         <li><font size="-1">中国糕点行业咨询委员会唯一指定电子商务网站 </font><a href="#"><img src="img/counter_2.gif"</a><a href="#"> 赣ICP58号</a> </li>
+    </ul>
+    </div>
+    </div>
+</div>
+<div id="box"><img src="img/run.gif" alt="" title="" /></div>
+<script type="text/javascript"> 
+/* 创建一个调用的实例 */ 
+var s = new sportBox(); 
+s.init('box',10); //参数表示元素id和方向(方向缺默向右下) 
+s.init('text'); 
+</script> 
+</body>
+</html>
